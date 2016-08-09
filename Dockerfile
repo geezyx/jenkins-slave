@@ -29,6 +29,8 @@ RUN curl --create-dirs -sSLo $HOME/swarm-client-$JENKINS_SWARM_VERSION-jar-with-
 
 ADD cmd.sh /cmd.sh
 
+RUN update-ca-certificates -f
+
 #ENV JENKINS_USERNAME jenkins
 #ENV JENKINS_PASSWORD jenkins
 #ENV JENKINS_MASTER http://jenkins:8080

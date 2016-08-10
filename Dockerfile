@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y libssl-dev libffi-dev python-dev python-pip && \
     apt-get clean
 
-ENV JENKINS_SWARM_VERSION 1.26
+ENV JENKINS_SWARM_VERSION 2.2
 ENV HOME /home/jenkins-slave
 
 # Add rancher-compose and ansible

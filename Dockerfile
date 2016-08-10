@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-get install -y wget curl git iptables ca-certificates && \
     apt-get install -y libssl-dev libffi-dev python-dev python-pip && \
+    apt-get install -y ruby ruby-dev ruby-bundler && \
     apt-get clean
 
 ENV JENKINS_SWARM_VERSION 2.2
